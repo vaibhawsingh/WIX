@@ -1,4 +1,7 @@
 # WIX
-Window Installer XML
+[1. Window Installer XML](1.windowinstallerxml)
 
-Here I will discuss complete Wix Setup Application and how to create Installer from WIX in windows
+
+1. Window Installer XML
+
+
