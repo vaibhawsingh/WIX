@@ -29,15 +29,15 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - Create New Project by selecting WiX Toolset v3 Setup Project for WiX v3 from the Templates with proper name and directory.
   - Once the project created open Product.wxs and add Manufacturer name to compile the project.
   - Add Directory structure for the application to install in C Drive.
-  '''
-  <Fragment>
+  <pre><code>
+  &lt;Fragment &gt;
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="INSTALLFOLDER" Name="SetupProject" />
 			</Directory>
 		</Directory>
 	</Fragment>
-  '''
+  </code></pre>
 ## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
