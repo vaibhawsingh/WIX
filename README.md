@@ -10,7 +10,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 <!-- toc -->
 ## 1. Windows Installer XML ##
-
+  - Windows Installer XML also known as WiX, is used for creating Installer which generates .msi or .exe application. This can be used for  is used in every areas like AI/ML, Data Analytics, Web-Devlopment, Mobile Apps Development, e.t.c.
 ## 2. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
