@@ -8,6 +8,8 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 [3. Creating Application using WiX](#3-creating-application-using-wix)
 
+  - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3.1-creating-shortcut-on-desktop-and-program-menu-folder)
+
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
 
@@ -46,10 +48,11 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   &lt;MediaTemplate EmbedCab="yes"/&gt;
   </code></pre>
   - Feature tag should contain those components and files which needs to be installed as one feature. All feature needs to be inside the Product Tag.
-  - You need to refer the WiX UI for dialog to be added by default to your application.
+  - You need to refer the WiX UI for dialog to be added by default to your application. This sholud be closed between Product Tag
   <pre><code>
-  <UIRef Id="Customize_Mondo"/>
+  &lt;UIRef Id="Customize_Mondo"/&gt;
   </code></pre>
+## 3.1 Creating Shortcut on Desktop and Program Menu Folder ##
   
   
   
