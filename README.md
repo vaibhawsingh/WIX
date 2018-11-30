@@ -16,3 +16,8 @@
 
 Note:- In solution Explorer You may see that Application shows as the (Visual Studio 2010) If you have visual studio version 2013 or above. If you compile this application you will get the error as "error MSB8020: The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found". To resolve this issue open Solution Explorer, right click on the project and select to "Upgrade VC++ Compiler and Library". This upgrades your project to current version and now you will be able to compile and build the application.
 
+Once you are able to build the application, now the time is for calling custom action from your WiX Application.
+
+Now we will see how to call custom action from WiX appliaction with example to add and delete Items in ComboBox depending upon the user selection of checkBox. Complete Source code is available in Repository.
+
+Here I am going to call two custom Action One to fill the ComboBox (FillingCombBox) and another is to delete the item from ComboBox(DletingFromComboBox). Function FillingComboBox() will get called when the user selects CheckBox and click on Next Button on that Dialog, While the function DletingFromComboBox() will get called when user click back button from the ComboBoxDlg. Here the ComboBoxDlg contains the ComboBox. 
