@@ -30,14 +30,18 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - Once the project created open Product.wxs and add Manufacturer name to compile the project.
   - Add Directory structure for the application to install in C Drive.
   <pre><code>
-  &lt;Fragment &gt;
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="SetupProject" />
-			</Directory>
-		</Directory>
-	</Fragment>
+  &lt;Fragment&gt;
+	&lt;Directory Id="TARGETDIR" Name="SourceDir"&gt;
+		&lt;Directory Id="ProgramFilesFolder"&gt;
+			&lt;Directory Id="INSTALLFOLDER" Name="SetupProject" /&gt;
+		&lt;/Directory&gt;
+	&lt;/Directory&gt;
+  &lt;/Fragment&gt;
   </code></pre>
+  - If you want the cab file to be embeded inside the installer then add "EmbedCab = "yes"" in MediaTemplate Tag.
+  <pre><code>
+  &lt;MediaTemplate EmbedCab="yes"/&gt;
+  </pre></code>
 ## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
