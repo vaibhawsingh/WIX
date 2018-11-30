@@ -52,7 +52,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   <pre><code>
   &lt;UIRef Id="Customize_Mondo"/&gt;
   </code></pre>
-## 3.1 Creating Shortcut on Desktop and Program Menu Folder ##
+### - 3.1 Creating Shortcut on Desktop and Program Menu Folder ###
   
   
   
