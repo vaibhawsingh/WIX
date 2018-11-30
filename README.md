@@ -53,7 +53,30 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   &lt;UIRef Id="Customize_Mondo"/&gt;
   </code></pre>
 ### - 3.1 Creating Shortcut on Desktop and Program Menu Folder ###
-  
+    - To create the shortcut first you need to add the directry structure as below.
+  <pre><code>
+  &lt;Directory Id="TARGETDIR" Name="SourceDir"&gt;
+    &lt;Directory Id="ProgramMenuFolder"&gt;
+      &lt;Directory Id="MenuShortCut" Name="App"&gt; //App is the folder name which gets created in program menu 
+      &lt;/Directory&gt;
+      &lt;Directory Id="DesktopFolder" Name="Desktop" /&gt; //creates desktop folder for shortcut on desktop
+    &lt;/Directory&gt;
+  &lt;/Directory&gt;
+  </code></pre>
+  - Now you need to add the code for creating shortcut.
+  <pre><code>
+  //Program menu shortcut
+  &lt;Fragment&gt;
+    &lt;DirectoryRef Id="MenuShortCut"&gt;
+      &lt;Component Id="ProgramMenuShortcut" Guid="9bd13330-6540-406f-a3a8-d7f7c69ae7f9"&gt;
+        &lt;Shortcut Id="ShortcutProgramMenu" Name="XYZ" Description="App" Target="App.exe" WorkingDirectory="DirectoryName" /&gt;
+        &lt;RemoveFolder Id="RemoveProgramMenuFolder" Directory="ProgramMenuFolder" On="uninstall" /&gt;
+        &lt;RemoveFolder Id="RemoveProgramMenuFolder3" Directory="MenuShortCut" On="uninstall" /&gt;
+        &lt;RegistryValue Root="HKCU" Key="Software\Setup\App" Name="installed" Type="integer" Value="1" KeyPath="yes" /&gt;
+      &lt/Component&gt;
+    &lt/DirectoryRef&gt;
+    </code></pre>
+
   
   
   
