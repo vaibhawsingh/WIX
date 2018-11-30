@@ -9,6 +9,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
 
+--------------------------------------------------------------------------------------------------------------------------------
 
 <!-- toc -->
 ## 1. Windows Installer XML ##
