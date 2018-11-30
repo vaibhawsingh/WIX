@@ -3,7 +3,9 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 -------------------------------------------------------------------------------------------------------------------------------
 [1. Windows Installer XML](#1-windows-installer-xml)
+
 [2. How To Install WiX](#2-how-to-install-wix-)
+
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
 
@@ -14,7 +16,11 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - Current Version of WiX  is v3.11.1 released on 2017/12/31
   - Its source files extension is .wxs and .wxl.
 ## 2. How To Install WiX ##
-  
+  - Download latest version of WiX from http://wixtoolset.org/ and install it to your PC. 
+  - If you want to install an interactive WiX setup editor then go to TOOLS and open Extensions and Updates...
+    * Search for WAX and then install it.
+  - Restart the Visual Studio to patch with WiX.
+  Note :- WAX can be only used if the project contains the WiX as one of the project in Solution Explorer. In my opinion WAX is not useful if you are making some complex application. 
 ## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
