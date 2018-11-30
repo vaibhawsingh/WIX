@@ -70,13 +70,15 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   &lt;Fragment&gt;
     &lt;DirectoryRef Id="MenuShortCut"&gt;
       &lt;Component Id="ProgramMenuShortcut" Guid="9bd13330-6540-406f-a3a8-d7f7c69ae7f9"&gt;
-        &lt;Shortcut Id="ShortcutProgramMenu" Name="XYZ" Description="App" Target="App.exe" WorkingDirectory="DirectoryName" /&gt;
+        //DirectoryName is the directory where the exe is available in C Drive
+        &lt;Shortcut Id="ShortcutProgramMenu" Name="XYZ" Description="App" Target="[DirectoryName]App.exe" WorkingDirectory="DirectoryName" /&gt;
         &lt;RemoveFolder Id="RemoveProgramMenuFolder" Directory="ProgramMenuFolder" On="uninstall" /&gt;
         &lt;RemoveFolder Id="RemoveProgramMenuFolder3" Directory="MenuShortCut" On="uninstall" /&gt;
         &lt;RegistryValue Root="HKCU" Key="Software\Setup\App" Name="installed" Type="integer" Value="1" KeyPath="yes" /&gt;
       &lt/Component&gt;
     &lt/DirectoryRef&gt;
-    </code></pre>
+   &lt;/Fragment&gt;
+   </code></pre>
 
   
   
