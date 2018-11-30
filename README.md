@@ -52,8 +52,8 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   <pre><code>
   &lt;UIRef Id="Customize_Mondo"/&gt;
   </code></pre>
-### - 3.1 Creating Shortcut on Desktop and Program Menu Folder ###
-    - To create the shortcut first you need to add the directry structure as below.
+### 3.1 Creating Shortcut on Desktop and Program Menu Folder ###
+  - To create the shortcut first you need to add the directry structure as below.
   <pre><code>
   &lt;Directory Id="TARGETDIR" Name="SourceDir"&gt;
     &lt;Directory Id="ProgramMenuFolder"&gt;
