@@ -63,7 +63,8 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
     &lt;/Directory&gt;
   &lt;/Directory&gt;
   </code></pre>
-  - Now you need to add the code for creating shortcut.
+   - Now you need to add the code for creating shortcut. Here we also need to add the **RemoveFolder** Tag for deleting the shortcut at the time of Uninstalling the application. Also don't forget to add this component reference in feature tag.
+  you also need to add the registry value so that it can be located easily at the time of instalation and product can be checked at the time of instalation weather it is available or not.
   <pre><code>
   //Program menu shortcut
   &lt;Fragment&gt;
