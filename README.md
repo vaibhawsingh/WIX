@@ -3,15 +3,19 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 -------------------------------------------------------------------------------------------------------------------------------
 [1. Windows Installer XML](#1-windows-installer-xml)
-
-[2. Custom Action in WIX](#2-custom-action-in-wix)
+[2. How To Install WiX](#2-how-to-install-wix-)
+[20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
 
 
 <!-- toc -->
 ## 1. Windows Installer XML ##
-  - Windows Installer XML also known as WiX, is used for creating Installer which generates .msi or .exe application. This can be used for  is used in every areas like AI/ML, Data Analytics, Web-Devlopment, Mobile Apps Development, e.t.c.
-## 2. Custom Action in WIX ##
+  - Windows Installer XML also known as WiX, is used for creating Installer which generates .msi or .exe application. This can be used for creating installer which bundles all kinds of file.
+  - Current Version of WiX  is v3.11.1 released on 2017/12/31
+  - Its source files extension is .wxs and .wxl.
+## 2. How To Install WiX ##
+  
+## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
   Custom Action written in c++ is unmanaged code, which is best for custom actions. To create custom actions using Visual studio open File->New->Project. A Dialog will pop up with all the templates and types of application. Select Installed->Templates->WIX Toolset->v3 and C++ Custom Actions Project for WiX v3.
