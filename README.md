@@ -44,9 +44,12 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - If you want the cab file to be embeded inside the installer then add "**EmbedCab = "yes"**" in MediaTemplate Tag.
   <pre><code>
   &lt;MediaTemplate EmbedCab="yes"/&gt;
-  </pre></code>
+  </code></pre>
   - Feature tag should contain those components and files which needs to be installed as one feature. All feature needs to be inside the Product Tag.
-  
+  - You need to refer the WiX UI for dialog to be added by default to your application.
+  <pre><code>
+  <UIRef Id="Customize_Mondo"/>
+  </code></pre>
   
   
   
