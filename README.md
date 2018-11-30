@@ -6,6 +6,8 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 [2. How To Install WiX](#2-how-to-install-wix)
 
+[3. Creating Application using WiX](#3-creating-application-using-wix)
+
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
 
@@ -21,7 +23,9 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - If you want to install an interactive WiX setup editor then go to TOOLS and open Extensions and Updates...
     * Search for WAX and then install it.
   - Restart the Visual Studio to patch with WiX.
-  **Note:-** WAX can be only used if the project contains the WiX as one of the project in Solution Explorer. In my opinion WAX is not useful if you are making some complex application. 
+  
+  **Note:-** WAX can be only used if the project contains the WiX as one of the project in Solution Explorer. In my opinion WAX is not useful if you are making some complex application.
+## 3. Creating Application using WiX ##
 ## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
