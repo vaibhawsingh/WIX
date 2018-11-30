@@ -16,19 +16,22 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 <!-- toc -->
 ## 1. Windows Installer XML ##
   - Windows Installer XML also known as WiX, is used for creating Installer which generates .msi or .exe application. This can be used for creating installer which bundles all kinds of file.
-  - Current Version of WiX  is v3.11.1 released on 2017/12/31
+  - Current Version of WiX  is **v3.11.1** released on **2017/12/31**
   - Its source files extension is .wxs and .wxl.
 ## 2. How To Install WiX ##
   - Download latest version of WiX from http://wixtoolset.org/ and install it to your PC. 
   - If you want to install an interactive WiX setup editor then go to TOOLS and open Extensions and Updates...
-    * Search for WAX and then install it.
+    * Search for **WAX** and then install it.
   - Restart the Visual Studio to patch with WiX.
   
   **Note:-** WAX can be only used if the project contains the WiX as one of the project in Solution Explorer. In my opinion WAX is not useful if you are making some complex application.
 ## 3. Creating Application using WiX ##
-  - Create New Project by selecting WiX Toolset v3 Setup Project for WiX v3 from the Templates with proper name and directory.
+  - Create New Project by selecting WiX Toolset v3 Setup Project for **WiX v3** from the Templates with proper name and directory.
   - Once the project created open Product.wxs and add Manufacturer name to compile the project.
-  - Add Directory structure for the application to install in C Drive.
+  - Add Directory structure for the application to install in **C Drive**.
+  - Here **ProgramFilesFolder** denotes **Program Files (x86)**. If you want to change the folder to 64 bit then you need to use **ProgramFiles64Folder**. 
+  
+  **Note:-** To create 64 bit application you need to add "**Platform="x64"**" in Package Tag and all the Component tag should be added by "**Win64="yes"**".
   <pre><code>
   &lt;Fragment&gt;
 	&lt;Directory Id="TARGETDIR" Name="SourceDir"&gt;
@@ -38,10 +41,17 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 	&lt;/Directory&gt;
   &lt;/Fragment&gt;
   </code></pre>
-  - If you want the cab file to be embeded inside the installer then add "EmbedCab = "yes"" in MediaTemplate Tag.
+  - If you want the cab file to be embeded inside the installer then add "**EmbedCab = "yes"**" in MediaTemplate Tag.
   <pre><code>
   &lt;MediaTemplate EmbedCab="yes"/&gt;
   </pre></code>
+  - Feature tag should contain those components and files which needs to be installed as one feature. All feature needs to be inside the Product Tag.
+  
+  
+  
+  
+  
+  
 ## 20. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
