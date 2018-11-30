@@ -4,7 +4,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 -------------------------------------------------------------------------------------------------------------------------------
 [1. Windows Installer XML](#1-windows-installer-xml)
 
-[2. How To Install WiX](#2-how-to-install-wix-)
+[2. How To Install WiX](#2-how-to-install-wix)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
