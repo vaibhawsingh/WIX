@@ -2,16 +2,16 @@
 This Documents will explains alomst all the WiX concepts from zero level to advanced level. Every Chapter in this tutorials explains the concepts in very easy way and also provide the coding.
 
 -------------------------------------------------------------------------------------------------------------------------------
-[1. Window Installer XML](#1.windowinstallerxml)
+[1. Windows Installer XML](#1-windows-installer-xml)
 
-[2. Custom Action in WIX](#2.customactioninwix)
+[2. Custom Action in WIX](#2-custom-action-in-wix)
 * [C++](#c++)
 
 
 <!-- toc -->
-1. Window Installer XML
+## 1. Windows Installer XML ##
 
-2. Custom Action in WIX
+## 2. Custom Action in WIX ##
 * How to create Custom Action in C++ 
 
   Custom Action written in c++ is unmanaged code, which is best for custom actions. To create custom actions using Visual studio open File->New->Project. A Dialog will pop up with all the templates and types of application. Select Installed->Templates->WIX Toolset->v3 and C++ Custom Actions Project for WiX v3.
