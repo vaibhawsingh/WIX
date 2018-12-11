@@ -114,6 +114,15 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    </code></pre>
 ### 3.6 Icon for Application ###
    - Icons need to be added so that it can be distinguished between different application.
+   - To add icons in *program and features* you need to override the Property **ARPPRODUCTICON**. It is also called as app Icon.
+   <pre><code>
+   &lt;Property Id="ARPPRODUCTICON"&gt;Icon&lt/Property&gt;
+   </code></pre>
+   - To add icons for shortcut either on desktop or program menu you need to add **Icon** tag in **Shortcut** element, and provide the Icon value. 
+   - Now you need to add/provide the value to the Icon.
+   <pre><code>
+   &lt;Icon Id="Icon" SourceFile="Abc.ico"/&gt;
+   </code></pre>
   
   
   
