@@ -85,10 +85,10 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    - To check for pre-requisite add the condition with RegistrySearch tag. For any kind of pre-requisite you need to check the registry entry.
    <pre><code>
    //registry search
-   <Property Id="CHECKVER10">
-      <RegistrySearch Id="VERSION_10_REG_SEARCH" Root="HKLM" Key="SOFTWARE\XYZ\Application" Name="Version" Type="raw" Win64="yes" />
-    </Property>
-    <Condition Message="Version 10 is Installed"><![CDATA[Installed OR (CHECKVER10 >= "10.00")]]></Condition>
+   &lt;Property Id="CHECKVER10"&gt;
+      &lt;RegistrySearch Id="VERSION_10_REG_SEARCH" Root="HKLM" Key="SOFTWARE\XYZ\Application" Name="Version" Type="raw" Win64="yes" /&gt;
+    &lt;/Property&gt;
+    &lt;Condition Message="Version 10 is Installed"&gt;&lt;![CDATA[Installed OR (CHECKVER10 &ge; "10.00")]]&gt;&lt;/Condition&gt;
     </code></pre>
     - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
     - 
