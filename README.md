@@ -89,6 +89,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
       <RegistrySearch Id="VERSION_10_REG_SEARCH" Root="HKLM" Key="SOFTWARE\XYZ\Application" Name="Version" Type="raw" Win64="yes" />
     </Property>
     <Condition Message="Version 10 is Installed"><![CDATA[Installed OR (CHECKVER10 >= "10.00")]]></Condition>
+    </code></pre>
     - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
     - 
 
