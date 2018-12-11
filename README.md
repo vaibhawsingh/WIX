@@ -8,7 +8,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 [3. Creating Application using WiX](#3-creating-application-using-wix)
 
-  - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3.1-creating-shortcut-on-desktop-and-program-menu-folder)
+  - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3-1-creating-shortcut-on-desktop-and-program-menu-folder)
   - [3.2 Check for Prerequisite](#3.2-check-for-prerequisite)
   - [3.3 Version Upgradation](#3.3-version-upgradation)
   - [3.4 Changing Banner](#3.4-changing-banner)
