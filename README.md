@@ -135,8 +135,11 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    - **Heat.exe** is used to extract the files from the folder structure.
    - If you have application which have dll and images which are structured under the folder and it should be installed in the same way, you can use **Heat.exe** for extracting those files.
    <pre><code>
-   "C:\Program Files (x86)\WiX Toolset v3.11\bin\heat.exe" dir "D:\Working\Heat\XYZ" -cg Heat -gg -scom -sreg -sfrag -srd -out "D:\Working\XYZ_WixSetup\XYZ\FilesFragment.wxs"
+   "C:\Program Files (x86)\WiX Toolset v3.11\bin\heat.exe" dir "D:\Working\Heat\XYZ" -cg Component -gg -scom -sreg -sfrag -srd -out "D:\Working\XYZ_WixSetup\XYZ\FilesFragment.wxs"
    </code></pre>
+   - Here the folder used for extracting the files is **D:\Working\Heat\XYZ**.
+   - **Component** is used for putting the files under one component.
+   - And **D:\Working\XYZ_WixSetup\XYZ\FilesFragment.wxs** is used for creating the file once the extraction is completed.
   
   
 ## 20. Custom Action in WIX ##
