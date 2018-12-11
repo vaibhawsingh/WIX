@@ -9,6 +9,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 [3. Creating Application using WiX](#3-creating-application-using-wix)
 
   - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3.1-creating-shortcut-on-desktop-and-program-menu-folder)
+  - [3.2 Check for Prerequisite](#3.2-check-for-prerequisite)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -80,6 +81,17 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    &lt;/Fragment&gt;
    </code></pre>
    - 
+### 3.2 Check for Prerequisite ###
+   - To check for pre-requisite add the condition with RegistrySearch tag. For any kind of pre-requisite you need to check the registry entry.
+   <pre><code>
+   //registry search
+   <Property Id="CHECKVER10">
+      <RegistrySearch Id="VERSION_10_REG_SEARCH" Root="HKLM" Key="SOFTWARE\XYZ\Application" Name="Version" Type="raw" Win64="yes" />
+    </Property>
+    <Condition Message="Version 10 is Installed"><![CDATA[Installed OR (CHECKVER10 >= "10.00")]]></Condition>
+    - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
+    - 
+
   
   
   
