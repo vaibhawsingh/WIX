@@ -15,6 +15,8 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - [3.5 Adding License](#3.5-adding-license)
   - [3.6 Icon for Application](#3.6-icon-for-application)
   - [3.7 Changing Instalation Directory](#3.7-changing-instalation-directory)
+  
+[4. Adding Files and folders using Heat](#4-adding-files-and-folders-using-heat)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
