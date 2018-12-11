@@ -90,7 +90,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
     &lt;/Property&gt;
     &lt;Condition Message="Version 10 is Installed"&gt;&lt;![CDATA[Installed OR (CHECKVER10 &ge; "10.00")]]&gt;&lt;/Condition&gt;
     </code></pre>
-    - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
+   - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
     - 
 
   
