@@ -8,7 +8,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
 [3. Creating Application using WiX](#3-creating-application-using-wix)
 
-  - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3-1-creating-shortcut-on-desktop-and-program-menu-folder)
+  - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3.1-creating-shortcut-on-desktop-and-program-menu-folder)
   - [3.2 Check for Prerequisite](#3.2-check-for-prerequisite)
   - [3.3 Version Upgradation](#3.3-version-upgradation)
   - [3.4 Changing Banner](#3.4-changing-banner)
@@ -17,6 +17,10 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - [3.7 Changing Instalation Directory](#3.7-changing-instalation-directory)
   
 [4. Extracting Files and folders using Heat](#4-extracting-files-and-folders-using-heat)
+
+[5. Customizing Dialog in WIX](#5-customizing-dialog-in-wix)
+
+  - [5.1 Customizing predefined dialog](#5.1-customizing-predefined-dialog)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -142,6 +146,15 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    - Here the folder used for extracting the files is **D:\Working\Heat\XYZ**.
    - **Component** is used for putting the files under one component.
    - And **D:\Working\XYZ_WixSetup\XYZ\FilesFragment.wxs** is used for creating the file once the extraction is completed.
+## 5. Customizing Dialog in WIX ##
+   - When you are building application using Wix, you may need to change some buuton and may provide some custom button, Radio button, CheckBox or ComboBox.
+   - These changes you can do either on the predefined dialog by customizing it or you can add your new customize dialog.
+### 5.1 Customizing predefined dialog ###
+   - For customizing dialog you need to download the source code of **WIX** and then the dialog which you want to customize that dialog file needs to be added to your application.
+   - Since you are customizing the dialog you need to change the file name which you are adding into your application, and also you need to change the base file which contains the control of all the dialogs. 
+   
+   
+   
   
   
 ## 20. Custom Action in WIX ##
