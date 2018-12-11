@@ -16,7 +16,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - [3.6 Icon for Application](#3.6-icon-for-application)
   - [3.7 Changing Instalation Directory](#3.7-changing-instalation-directory)
   
-[4. Adding Files and folders using Heat](#4-adding-files-and-folders-using-heat)
+[4. Extracting Files and folders using Heat](#4-extracting-files-and-folders-using-heat)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -131,11 +131,11 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    <pre><code>
    &lt;Property Id="WIXUI_INSTALLDIR" Value="APPLICATIONFOLDER"/&gt;
    </code></pre>
-## 4. Adding Files and folders using Heat ##
+## 4. Extracting Files and folders using Heat ##
    - **Heat.exe** is used to extract the files from the folder structure.
    - If you have application which have dll and images which are structured under the folder and it should be installed in the same way, you can use **Heat.exe** for extracting those files.
    - Open Properties from the solution explorer and select Build Events.
-   - Add the below command in Pre-build Event Command Line.
+   - Add the below command in **Pre-build Event Command Line**.
    <pre><code>
    "C:\Program Files (x86)\WiX Toolset v3.11\bin\heat.exe" dir "D:\Working\Heat\XYZ" -cg Component -gg -scom -sreg -sfrag -srd -out "D:\Working\XYZ_WixSetup\XYZ\FilesFragment.wxs"
    </code></pre>
