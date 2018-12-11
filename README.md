@@ -13,6 +13,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - [3.3 Version Upgradation](#3.3-version-upgradation)
   - [3.4 Changing Banner](#3.4-changing-banner)
   - [3.5 Adding License](#3.5-adding-license)
+  - [3.6 Icon for Application](#3.6-icon-for-application)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -98,17 +99,21 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    - Also you need to add **MajorUpgrade** elememt to your application.
    <pre><code>
    &lt;MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of [ProductName] is already installed." /&gt;
-   </pre></code>
+   </code></pre>
    - you can use the same element for different types of upgradation and degradation.
 ### 3.4 Changing Banner ###
    - To change the banner you need to override the predefined/Default *WixVariable* **WixUIBannerBmp**
    <pre><code>
-   <WixVariable Id="WixUIBannerBmp"  Value="newBaner.bmp" />
-   </pre></code>
+   &lt;WixVariable Id="WixUIBannerBmp"  Value="newBaner.bmp" /&gt;
+   </code></pre>
 ### 3.5 Adding License ###
    - To change the License you need to override the predefined/Default *WixVariable* **WixUILicenseRtf**
-   - License must be saved in *.rtf* extension and it should be edited in wordpad only not with the micrsoft word.
-  
+   - License must be saved in *&#42;.rtf* extension and it should be edited in wordpad only not with the micrsoft word.
+   <pre><code>
+   &lt;WixVariable Id="WixUILicenseRtf" Value="..\..\License\License.rtf"/&gt;
+   </code></pre>
+### 3.6 Icon for Application ###
+   - Icons need to be added so that it can be distinguished between different application.
   
   
   
