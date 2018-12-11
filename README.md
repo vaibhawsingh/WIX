@@ -21,6 +21,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 [5. Customizing Dialog in WIX](#5-customizing-dialog-in-wix)
 
   - [5.1 Customizing predefined dialog](#5.1-customizing-predefined-dialog)
+  - [5.2 Adding new Customize dialog](#5.2-adding-new-customize-dialog)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -149,10 +150,15 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 ## 5. Customizing Dialog in WIX ##
    - When you are building application using Wix, you may need to change some buuton and may provide some custom button, Radio button, CheckBox or ComboBox.
    - These changes you can do either on the predefined dialog by customizing it or you can add your new customize dialog.
+   - For these changes to be incorporated you have to add the base file to your application. Base file for **WixUI_InstallDir** is *WixUI_InstallDir.wxs*.
 ### 5.1 Customizing predefined dialog ###
    - For customizing dialog you need to download the source code of **WIX** and then the dialog which you want to customize that dialog file needs to be added to your application.
-   - Since you are customizing the dialog you need to change the file name which you are adding into your application, and also you need to change the base file which contains the control of all the dialogs. 
-   
+   - Since you are customizing the dialog you need to change the file name which you are adding into your application.
+   - you need to update the base file with the new name of the dialog and add it as reference dialog.
+   - Alos if you wants to change something on next button or back button you can do that also in base file.
+### 5.2 Adding new Customize dialog ###
+   - Add any dialog file from the WIX Source code and modify this dialog according to your requirement.
+   - Now add reference to this new dialog into the base file with the new control sequence.
    
    
   
