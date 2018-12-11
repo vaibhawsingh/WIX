@@ -14,6 +14,7 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
   - [3.4 Changing Banner](#3.4-changing-banner)
   - [3.5 Adding License](#3.5-adding-license)
   - [3.6 Icon for Application](#3.6-icon-for-application)
+  - [3.7 Changing Instalation Directory](#3.7-changing-instalation-directory)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -122,6 +123,11 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
    - Now you need to add/provide the value to the Icon.
    <pre><code>
    &lt;Icon Id="Icon" SourceFile="Abc.ico"/&gt;
+   </code></pre>
+### 3.7 Changing Instalation Directory ###
+   - If you are providing an option to the user for selecting the directory for instalation, you need to override the Default Install Directory. you need to update the Property **WIXUI_INSTALLDIR** value with new directory.
+   <pre><code>
+   &lt;Property Id="WIXUI_INSTALLDIR" Value="APPLICATIONFOLDER"/&gt;
    </code></pre>
   
   
