@@ -10,6 +10,9 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
 
   - [3.1 Creating Shortcut on Desktop and Program Menu Folder](#3.1-creating-shortcut-on-desktop-and-program-menu-folder)
   - [3.2 Check for Prerequisite](#3.2-check-for-prerequisite)
+  - [3.3 Version Upgradation](#3.3-version-upgradation)
+  - [3.4 Changing Banner](#3.4-changing-banner)
+  - [3.5 Adding License](#3.5-adding-license)
 
 [20. Custom Action in WIX](#20-custom-action-in-wix)
 * [C++](#c++)
@@ -80,7 +83,6 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
     &lt/DirectoryRef&gt;
    &lt;/Fragment&gt;
    </code></pre>
-   - 
 ### 3.2 Check for Prerequisite ###
    - To check for pre-requisite add the condition with RegistrySearch tag. For any kind of pre-requisite you need to check the registry entry.
    <pre><code>
@@ -91,8 +93,21 @@ This Documents will explains alomst all the WiX concepts from zero level to adva
     &lt;Condition Message="Version 10 is Installed"&gt;&lt;![CDATA[Installed OR (CHECKVER10 &ge; "10.00")]]&gt;&lt;/Condition&gt;
     </code></pre>
    - If the condition is satisfied installer will pops up a window which shows the condition message which is available in Condition tag and the instalation gets aborted.
-    - 
-
+### 3.3 Version Upgradation ###
+   - To create a new release of installer either a new version or the same, you need to change the Product ID.
+   - Also you need to add **MajorUpgrade** elememt to your application.
+   <pre><code>
+   &lt;MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of [ProductName] is already installed." /&gt;
+   </pre></code>
+   - you can use the same element for different types of upgradation and degradation.
+### 3.4 Changing Banner ###
+   - To change the banner you need to override the predefined/Default *WixVariable* **WixUIBannerBmp**
+   <pre><code>
+   <WixVariable Id="WixUIBannerBmp"  Value="newBaner.bmp" />
+   </pre></code>
+### 3.5 Adding License ###
+   - To change the License you need to override the predefined/Default *WixVariable* **WixUILicenseRtf**
+   - License must be saved in *.rtf* extension and it should be edited in wordpad only not with the micrsoft word.
   
   
   
